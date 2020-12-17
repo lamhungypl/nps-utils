@@ -4,3 +4,4 @@ dist
 .opt-in
 .opt-out
 npm-debug.log
+.history

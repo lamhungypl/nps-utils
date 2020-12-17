@@ -3,9 +3,11 @@
   "version": "0.0.0-semantically-released",
   "description": "Utilities for nps (npm-package-scripts)",
   "main": "dist/index.js",
+  "type": "commonjs",
   "scripts": {
     "start": "nps",
     "test": "nps test",
+    "prepare": "npm start build",
     "commitmsg": "opt --in commit-msg --exec \"validate-commit-msg\"",
     "precommit": "opt --in pre-commit --exec \"lint-staged && npm start validate\""
   },
